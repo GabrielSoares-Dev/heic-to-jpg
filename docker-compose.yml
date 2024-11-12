@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  boilerplate-php-lib:
+    build: .
+    volumes:
+      - .:/app/boilerplate-php-lib
+      - volume-boilerplate-php-lib-vendor:/app/boilerplate-php-lib/vendor
+    stdin_open: true
+    tty: true
+volumes:
+ volume-boilerplate-php-lib-vendor:
+  name: volume-boilerplate-php-lib-vendor
