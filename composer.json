@@ -15,13 +15,22 @@
             "GabrielSoaresMaciel\\PhpLibExample\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "require": {
         "php": ">=7.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.64"
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "phpunit/phpunit": "^9.6",
+        "mockery/mockery": "^1.6"
     },
     "scripts": {
+        "test:unit": "./vendor/bin/phpunit --include-path tests/Unit",
+        "test:coverage": "./vendor/bin/phpunit --coverage-text --coverage-html coverage",
         "lint:test": "./vendor/bin/php-cs-fixer check",
         "lint:fix": "./vendor/bin/php-cs-fixer fix"
     }

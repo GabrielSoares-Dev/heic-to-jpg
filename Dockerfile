@@ -5,6 +5,9 @@ RUN apt-get update \
     zip \
     unzip \
     git
+    
+RUN  pecl install xdebug-2.8.1 \
+    && docker-php-ext-enable xdebug
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
