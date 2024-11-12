@@ -1,0 +1,20 @@
+{
+    "name": "gabrielsoaresmaciel/php-lib-example",
+    "description": "php lib to learning how to create and publish in packagist",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Soares Maciel",
+            "email": "gsmaciel@outlook.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GabrielSoaresMaciel\\PhpLibExample\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0"
+    }
+}
