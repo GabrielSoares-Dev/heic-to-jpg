@@ -1,0 +1,12 @@
+name: NEW - VERSION
+on:
+  workflow_dispatch:
+jobs:
+  php_lib:
+    name: new_version
+    uses: GabrielSoares-Dev/workflows/.github/workflows/php-lib-new-version.yml@master
+    with:
+      packagist_username: 'GabrielSoares-Dev'
+    secrets:
+      git_token: ${{secrets.GIT_TOKEN}}
+      packagist_token: ${{secrets.PACKAGIST_TOKEN}}
