@@ -5,8 +5,8 @@ on:
     branches:
       - master
 jobs:
-  serverless:
+  php_lib:
     name: CI
-    uses: Life-Control/workflows/.github/workflows/laravel-serverless-CI.yml@master
+    uses: GabrielSoares-Dev/workflows/.github/workflows/php-lib-CI.yml@master
     with:
-      php_version: '8.1'
+      php_version: '7.4'
