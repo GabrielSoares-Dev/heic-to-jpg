@@ -6,6 +6,6 @@ class Example
 {
     public function hello(string $name): string
     {
-        return "Hellod {$name}";
+        return "Hello {$name}";
     }
 }
