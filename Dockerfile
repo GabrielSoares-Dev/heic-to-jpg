@@ -11,7 +11,7 @@ RUN  pecl install xdebug-2.8.1 \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-WORKDIR /app/boilerplate-php-lib
+WORKDIR /app/heic-to-jpg
 
 COPY . .
 

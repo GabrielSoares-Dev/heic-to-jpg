@@ -1,12 +1,12 @@
 version: '3.5'
 services:
-  boilerplate-php-lib:
+  heic-to-jpg:
     build: .
     volumes:
-      - .:/app/boilerplate-php-lib
-      - volume-boilerplate-php-lib-vendor:/app/boilerplate-php-lib/vendor
+      - .:/app/heic-to-jpg
+      - volume-heic-to-jpg-vendor:/app/heic-to-jpg/vendor
     stdin_open: true
     tty: true
 volumes:
- volume-boilerplate-php-lib-vendor:
-  name: volume-boilerplate-php-lib-vendor
+ volume-heic-to-jpg-vendor:
+  name: volume-heic-to-jpg-vendor
